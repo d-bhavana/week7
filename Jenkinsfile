@@ -11,7 +11,7 @@ pipeline{
                 steps{
                     echo "Run applictaion in Docker Container"
                     bat "docker rm -f mycontainer || exit0"
-                    bat "docker run -d -p 5000:5000 --name mycontainer mypythonflaskapp"
+                    bat "docker run -d -p 5001:5001 --name mycontainer mypythonflaskapp"
                 } 
             }
 
